@@ -1,0 +1,86 @@
+/* src/styles/AdminDashboard.css */
+.admin-dashboard {
+  padding: 20px;
+  text-align: center;
+  background-color: #e8f5e9;
+}
+
+.product-approval-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-approval-item {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #1b5e20;
+  border-radius: 10px;
+  background-color: #c8e6c9;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.product-approval-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.product-name {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.product-description {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+.product-quantity {
+  font-weight: bold;
+  color: #4caf50;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Approve and Reject Button Styles */
+.approve-button,
+.reject-button {
+  position: absolute;
+  bottom: 0px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Approve Button Position and Colors */
+.approve-button {
+  left: 8%;
+  background-color: #388e3c;
+}
+
+.approve-button:hover {
+  background-color: #2e7d32;
+}
+
+/* Reject Button Position and Colors */
+.reject-button {
+  right: 8%;
+  background-color: #d32f2f;
+}
+
+.reject-button:hover {
+  background-color: #b71c1c;
+}

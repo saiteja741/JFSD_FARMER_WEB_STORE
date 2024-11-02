@@ -1,0 +1,39 @@
+.farmer-dashboard {
+  padding: 20px;
+  background-color: #e0f2f1;
+  color: #00695c;
+}
+
+.farmer-dashboard h2 {
+  color: #004d40;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  padding: 8px;
+  border: 1px solid #004d40;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
